@@ -8,9 +8,10 @@ def is_prime(num):
     return True
 
 # Example usage:
-number = int(input("Enter a number: "))
-
-if is_prime(number):
-    print(number, "is a prime number")
-else:
-    print(number, "is not a prime number")
+ntime=int(input("How many times you want to check the prime number"))
+for i in range(ntime+1):
+    number = int(input("Enter a number: "))
+    if is_prime(number):
+        print(number, "is a prime number")
+    else:
+        print(number, "is not a prime number")
